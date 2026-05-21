@@ -1,16 +1,16 @@
-# Relogio Digital com JavaFX
+# Relógio Digital com JavaFX
 
-Aplicacao desktop simples que exibe um relogio digital em tempo real.
+Aplicação desktop simples que exibe um relógio digital em tempo real.
 
-![Demonstracao do Relogio Digital](./assets/relogio-digital.gif)
+![Demonstração do Relógio Digital](./assets/relogio-digital.gif)
 
-## Repositorio
+## Repositório
 
 [relogio-digital](https://github.com/p-rcorreia/relogio-digital.git)
 
 ## Objetivo
 
-Criar uma interface grafica com JavaFX que mostra a hora atual e atualiza os segundos continuamente.
+Criar uma interface gráfica com JavaFX que mostra a hora atual e atualiza os segundos continuamente.
 
 ## Conceitos praticados
 
@@ -20,29 +20,29 @@ Criar uma interface grafica com JavaFX que mostra a hora atual e atualiza os seg
 - `Timeline`
 - `KeyFrame`
 - `Duration` do JavaFX
-- Atualizacao continua de interface
-- Estilizacao simples com CSS inline
+- Atualização contínua de interface
+- Estilização simples com CSS inline
 
 ## Funcionalidades
 
 - Exibe a hora atual no formato `HH:mm:ss`
-- Atualiza a exibicao a cada segundo
+- Atualiza a exibição a cada segundo
 - Usa fundo preto e texto amarelo
-- Mantem a atualizacao enquanto a janela esta aberta
+- Mantém a atualização enquanto a janela está aberta
 
 ## Status
 
-Concluido.
+Concluído.
 
 ## Como funciona
 
-O relogio usa `LocalDateTime.now()` para obter a hora atual e `DateTimeFormatter` para formatar o texto no padrao `HH:mm:ss`.
+O relógio usa `LocalDateTime.now()` para obter a hora atual e `DateTimeFormatter` para formatar o texto no padrão `HH:mm:ss`.
 
-A atualizacao continua e feita com uma `Timeline` do JavaFX. Um `KeyFrame` atualiza o texto do rotulo e outro define o intervalo de um segundo.
+A atualização contínua é feita com uma `Timeline` do JavaFX. Um `KeyFrame` atualiza o texto do rótulo e outro define o intervalo de um segundo.
 
 ## Como executar
 
-No PowerShell, com a variavel `PATH_TO_FX` apontando para a pasta `lib` do JavaFX:
+No PowerShell, com a variável `PATH_TO_FX` apontando para a pasta `lib` do JavaFX:
 
 ```powershell
 javac --module-path "$env:PATH_TO_FX" --add-modules javafx.controls RelogioDigital.java
